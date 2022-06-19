@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    background-color: white;
+    text-align: center;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    width: 30%;
+    border-right: 3px solid black;
+}
+nav ul li a {
+    text-decoration: none;
+    color: red;
+    font-size: 24px;
+    padding: 5px;
+}
+nav ul li:last-child {
+    border: none;
+}
+nav h1{
+    color:red;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px dimgrey;
+}
+.banner {
+    height: 300px;
+    background-color:whitesmoke;
+}
+
+.banner div {
+    height: 90px;
+}
+.first {
+    color:white;
+    font-size: 28px;
+    animation: move 2s linear infinite alternate-reverse;
+}
+@keyframes move {
+    from {
+        margin-left: 0%;
+        color:white;
+    }
+    50% {
+        font-size: 56px;
+        color: red;
+    }
+
+    to {
+        margin-left:80%;
+        color:white;
+    }
+}
+
+.second {
+    text-align: center;
+    font-size: 64px;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: bold;
+
+    animation: disappear 2s linear infinite alternate-reverse;
+}
+@keyframes disappear {
+    from {
+        height: 0px;
+        overflow: hidden;
+    }
+    to {
+        height: 72px;
+        overflow: hidden;
+    }
+}
+.third {
+    text-align: center;
+    color:black;
+    font-weight: bold;
+    transform: translateY(75px);
+
+    animation: flyup 2s linear infinite ;
+}
+
+@keyframes flyup {
+    from {
+        transform: translateY(75px) scale(1.0);
+    }
+    to {
+        transform: translateY(0px) scale(1.25);
+    }
+}
+.journey {
+    background-color:brown;
+    height: 300px;
+}
+.title {
+    padding: 15px;
+    text-align: center;
+    color:grey;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.slideshow {
+    height: 200px;
+    width: 75%;
+    margin: 0 auto;
+
+    background-image: url('images/2019.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: slideshow 15s linear infinite;
+}
+@keyframes slideshow {
+    0% {
+        background-image: url('images/2019.jpg');
+    }
+    25% {
+        background-image: url('images/2020.jpg');
+    }
+    50% {
+        background-image: url('images/2021.jpg');
+    }
+    75% {
+        background-image: url('images/2022.jpg');
+    }
+    100% {
+        background-image: url('images/2019.jpg');
+    }
+}
+.courses {
+    background-color: lightgrey;
+    
+}
+.course-card {
+    border-radius: 15px;
+    border: 2px solid white;
+    width:90%;
+    height:300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.course-card img{
+    width: 50% ; 
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+
+    border-radius: 15px 0 0 15px;
+
+}
+.course-card h4, h5, p {
+    margin-top: 15px;
+}
+.course-card h4 {
+    color: crimson;
+    font-weight: bold;
+}
+.level {
+    color: brown;
+    font-weight: bold;
+}
+
+.price{
+    background-color: lightgrey;
+}
+
+table {
+    width: 75%;
+    background-color: white;
+    margin: 0 auto;
+}
+thead {
+    background-color:turquoise;
+    height: 50px;
+    color: aliceblue;
+}
+
+tbody tr {
+    background-color: white;
+    height: 40px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: aliceblue;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(152, 226, 218);
+}
+
+tbody tr:nth-child(odd):hover {
+    background-color:turquoise;
+}
+
+.teacher-card {
+    width: 300px;
+    height: 300px;
+    background-color: lightgrey;
+    text-align: center;
+    display:inline-block;
+    border-radius: 15px;
+    border: 2px solid grey ;
+    margin: 15px;
+    overflow: hidden;
+    transition:all 1s linear;
+}
+
+.teacher-card img {
+    width: 150px;
+    height: 150px;
+    border: 2px solid grey;
+    border-radius: 50%;
+}
+.teacher-card:hover {
+    transform:scale(1.1);
+}
+
+form {
+    background-color: darkgray;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.row {
+    height:50px;
+}
+
+label, input ,select {
+    display: inline-block;
+    width: 45%;
+    font-size: 16px;
+}
+
+input {
+    border-radius: 100px;
+    border: none;
+
+}
+input[type="submit"] {
+    background-color:turquoise;
+    font-size: 24px;
+    width: 100%;
+    color: aliceblue;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+input[type="email"] {
+    background-color:none;
+}
+.footer{
+    height: 100px;
+    clear: both;
+    text-align: center;
+}
